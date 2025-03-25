@@ -1,0 +1,13 @@
+#totalGastado{
+	color: #858585; 
+	font-size: 18px; 
+	font-weight: 600;
+}
+
+.totalGastado {
+		color: rgb(40 177 40) !important;
+		font-size: 18px;
+		font-weight: 500;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left: 20%;
+}

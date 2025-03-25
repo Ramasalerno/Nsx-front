@@ -1,0 +1,43 @@
+.steps-cont .steps-first h3{
+    text-align: center;
+    color: #130f0f;
+}
+p{
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+    color: #808080;
+}
+
+h6 a{
+    text-align: center;
+}
+
+.icono-centrado{
+    display: flex;
+    justify-content: center;
+    color: #808080;
+}
+
+.steps-cont{
+    padding: 30px;
+    margin-top: 42px;
+    margin-bottom: 27px;
+}
+
+.steps-first{
+    margin-bottom: 63px;
+}
+
+.steps-cont .steps-first img{
+    margin-bottom: 20px;
+    opacity: 0.5
+}
+
+@media (max-width: 400px) {
+    .steps-cont{
+        display: none;
+    }
+}

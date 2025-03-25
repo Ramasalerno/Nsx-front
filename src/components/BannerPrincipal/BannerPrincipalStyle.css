@@ -1,0 +1,16 @@
+.imgBannerPrincipal{
+    width: 100%;
+}
+
+.imgBannerPrincipal img{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .imgBannerPrincipal img{
+        display: none;
+    }
+    .noMostrarMobile{
+        display: none;
+    }
+}

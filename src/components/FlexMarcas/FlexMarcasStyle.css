@@ -1,0 +1,126 @@
+.GridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 75em;
+}
+
+.GridContainer img {
+    padding: 1rem;
+    width: 30%;
+}
+
+@media (min-width: 1000px){
+    .GridContainer img  {
+      width: 15%;
+      max-width: 100%;
+      border: 1px solid rgb(185, 185, 185);
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    /* .GridContainer img:hover  {
+      border: 1px solid #0078c5;
+      cursor: pointer;
+      transition: 1s all;
+      cursor: pointer;
+      transition: 0.5s ease all;
+      transform:scale(1.05);
+      box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.8);
+      -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.8);
+      -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.8);
+    } */
+
+    .GridContainer {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      margin-top: 40em;
+      margin-bottom: 10px;
+
+      }
+
+  }
+
+  @media (max-width: 590px){
+    .GridContainer img  {
+      border: 1px solid rgb(120, 119, 119);
+      margin: 10px; 
+    }
+
+    .GridContainer img:hover  {
+      background-color: rgba(203, 200, 200, 0.407);
+      border: 1px solid #0078c5;
+      cursor: pointer;
+      transition: 1s all;
+    }
+
+  }
+
+
+ 
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 50px;
+    width: 250px;
+  }
+
+  

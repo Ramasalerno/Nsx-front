@@ -1,0 +1,172 @@
+.fondoNegro {
+    background: #000;
+}
+
+.imgCompuMuestra {
+    width: 100%;
+}
+
+.btnCompuMuestra {
+    background-color: #ed0000;
+    color: #fff;
+    /* border: 2px solid #ed0000; */
+    transition: 0.2s ease all;
+    font-family: "gotham-medium";
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    padding: 9px 70px;
+}
+
+.btnCompuMuestra:hover {
+    background-color: #ad0101;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease all;
+}
+
+.contenedorCompuMuestra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    --animate-delay: 0.5s;
+}
+
+.compuMuestra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background: #fff; */
+    width: 300px;
+    min-height: 450px;
+    /* border-radius: 16px; */
+    transition: 0.4s ease all;
+    margin: 60px 0px;
+}
+
+#queEsPoweredByAsus {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#queEsPoweredByAsus img,
+#premiosAsusRog img {
+    width: 34%;
+}
+
+#premiosAsusRog {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#premiosAsusRog p {
+    text-align: center;
+}
+
+#premiosAsusRog a {
+    color: red;
+    text-decoration: none;
+}
+
+#premiosAsusRog a:hover {
+    font-weight: 800;
+    font-size: 16.5px;
+}
+
+.tituloRojo {
+    font-family: 'Montserrat', sans-serif;
+    color: #ed0000;
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: initial;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fondoAsus {
+    background-image: url(https://cdn.shopify.com/s/files/1/0437/8358/5942/files/bg-fuzzy-min.jpg?v=1675965677  );
+    background-position: center;
+    background-size: cover;
+}
+
+.porQueElegirPBA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedorImgEquiposPBA {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.porQueElegirPBA p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.imgElegirEquipoPBA {
+    width: 160px
+}
+
+@media (max-width: 768px) {
+    #queEsPoweredByAsus {
+        flex-direction: column;
+    }
+
+    .porQueElegirPBA {
+        flex-direction: column;
+    }
+
+    #premiosAsusRog {
+        flex-direction: column;
+    }
+
+    #queEsPoweredByAsus img,
+    #premiosAsusRog img {
+        width: 100%;
+    }
+
+    #compuMuestra {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        width: 250px;
+        min-height: 400px;
+        border-radius: 16px;
+        transition: 0.2s ease all;
+    }
+
+    .btnCompuMuestra {
+        background-color: #ed0000;
+        color: #fff;
+        transition: 0.2s ease all;
+        font-family: "gotham-medium";
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 10px;
+        text-decoration: none;
+        padding: 6px 40px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap');

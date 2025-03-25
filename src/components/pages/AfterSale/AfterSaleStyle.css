@@ -1,0 +1,21 @@
+.tituloGarantia{
+    text-align: center;
+    color: #1d428a;
+}
+
+
+.contenedorAfterSale p {
+    text-align: left;
+}
+
+.cardAfterSale {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+.contMobile {
+    width: 100% !important;
+}
+}

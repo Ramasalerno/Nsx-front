@@ -1,0 +1,50 @@
+#carga{
+    border: 10px solid rgb(204, 204, 204);
+	border-top-color: #0082eb;
+	/* border-top-style: groove; */
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	position: absolute;
+	/* top: 20%; */
+	left: 48%;
+	right: 0%;
+	bottom: 0%;
+	margin: 0;
+	-webkit-animation: girar 1.5s linear infinite;
+	-o-animation: girar 1.5s linear infinite;
+	animation: girar 1.5s linear infinite;
+}
+
+.h3__loader{
+    position: absolute!important;
+    top: 0%;left: 0%!important;
+    right: 0%!important;
+    bottom: 50%!important;
+    font-size: 21px;color: #757575!important;
+    margin: auto!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center!important;
+}
+
+#contenedor_carga {
+	background-color: rgba(240, 243, 250, 0.9);
+	height: 200vh;
+	width: 100%;
+	position: fixed;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	z-index: 10000;
+}
+@keyframes girar {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

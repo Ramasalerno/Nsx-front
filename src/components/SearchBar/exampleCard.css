@@ -1,0 +1,140 @@
+.examplecard-container{
+    
+    display: grid;
+    place-items: center;
+    background: #fafafa;
+}
+
+.examplecard{
+    position: relative;
+    width: 380px;
+    height: min-content;
+    padding: 25px;
+    background:#ffffff;
+    border: 2px solid #e1e3e6;
+    border-radius: 20px;
+    transition: .4s;
+
+}
+
+.examplecard:hover{
+    border-color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 12px rgba(0,0,0, .08);
+}
+
+.examplecard .examplecard-header h3{
+color: #404d61;
+font-size: 28px;
+}
+
+.examplecard .examplecard-header p{
+    color: #757d8a;
+font-size: 20px;
+}
+
+.examplecard .examplecard-header span{
+   position: absolute;
+   color: #f43c3c;
+   background: #fef0f0;
+   right: 25px;
+   top: 25px;
+   padding: 5px 10px;
+   border-radius: 12px;
+   font-size: 18px;
+}
+
+.examplecard .examplecard-img{
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    margin: 22px 0;
+    overflow: hidden;
+}
+
+.examplecard .examplecard-img img{
+    height: 100%;
+    transition: .4s;
+}
+
+.examplecard:hover .examplecard-img img{
+    transform: scale(1.06);
+}
+
+.examplecard .examplecard-img i{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #757d8a;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.examplecard .examplecard-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.examplecard .examplecard-details .examplecard-price p{
+    color: #757d8a;
+    font-size: 20px;
+}
+
+.examplecard .examplecard-details .examplecard-price strong{
+    color: #545d6d;
+    font-size: 22px;
+}
+
+.examplecard .examplecard-details .examplecard-colors{
+    display: flex;
+
+}
+
+.examplecard .examplecard-details .examplecard-colors div{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.examplecard .examplecard-details .examplecard-colors div:nth-child(1){
+    background: linear-gradient(90deg, #b72c31, #efb9b0);
+}
+
+.examplecard .examplecard-details .examplecard-colors div:nth-child(2){
+    background: linear-gradient(90deg, #25476d, #a8bed2);
+}
+
+.examplecard .examplecard-details .examplecard-colors div:nth-child(3){
+    background: linear-gradient(90deg, #10505b, #a4beb2);
+}
+
+.examplecard .examplecard-details .examplecard-colors div i{
+    color: #ffffff;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+
+.examplecard .examplecard-footer .example-button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+

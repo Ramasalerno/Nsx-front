@@ -1,0 +1,11 @@
+.tituloMiami {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cardMiami {
+    justify-content: center !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important; 
+}

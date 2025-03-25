@@ -1,0 +1,127 @@
+.color {
+    color: #0082eb;
+    font-weight: 700;
+}
+
+.ulParrafos {
+    list-style: disc !important;
+}
+
+.contenedorAboutInicios,
+.contenedorAboutVision,
+.contenedorAboutServicios,
+.contenedorAboutAcontecimientos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 0px;
+}
+
+.contenedorAboutInicios,
+.contenedorAboutServicios {
+    flex-direction: row;
+}
+
+.contenedorAboutVision,
+.contenedorAboutAcontecimientos {
+    flex-direction: row-reverse;
+}
+
+.imgInicios,
+.imgVision,
+.imgAcontecimientos,
+.imgServicios {
+    width: 700px;
+    transition-property: width;
+    transition: all 1s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.parrafoInicios {
+    padding: 25px;
+    --animate-delay: 0.3s;
+}
+
+.parrafoVision {
+    padding: 0px 25px;
+    --animate-delay: 0.7s;
+}
+
+.parrafoServicios {
+    padding: 0px 25px;
+    --animate-delay: 0.32s;
+}
+
+.parrafoAcontecimientos {
+    padding: 0px 25px;
+    --animate-delay: 0.5s;
+}
+
+/* **** */
+.scrollImgVision {
+    --animate-delay: 0.32s;
+}
+
+.scrollImgAcontecimientos {
+    --animate-delay: 0.3s;
+}
+
+/* **** */
+.parrafoVision p,
+.parrafoInicios p,
+.parrafoAcontecimientos p,
+.parrafoServicios p {
+    text-align: left;
+    transition-property: fontSize;
+    transition: all 1s;
+}
+
+@media (max-width: 1400px) {
+
+    .imgInicios,
+    .imgVision,
+    .imgAcontecimientos,
+    .imgServicios {
+        width: 570px;
+        transition-property: width;
+        transition: all 1s;
+    }
+
+    .parrafoVision p,
+    .parrafoInicios p,
+    .parrafoAcontecimientos p,
+    .parrafoServicios p {
+        font-size: 13px;
+        transition-property: fontSize;
+        transition: all 1s;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contenedorAboutInicios,
+    .contenedorAboutVision,
+    .contenedorAboutServicios,
+    .contenedorAboutAcontecimientos {
+        flex-direction: column-reverse;
+        width: min-content;
+        margin: auto;
+        transition-property: width;
+        transition: all 1s;
+    }
+}
+
+@media (max-width: 768px){
+    .imgInicios, .imgVision, .imgAcontecimientos, .imgServicios{
+        width: 350px;
+    }
+    .parrafoVision p,
+    .parrafoInicios p,
+    .parrafoAcontecimientos p,
+    .parrafoServicios p {
+        font-size: 12px;
+        transition-property: fontSize;
+        transition: all 1s;
+    }
+}

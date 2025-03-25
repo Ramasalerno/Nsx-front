@@ -1,0 +1,46 @@
+.comprarProducto {
+	position: sticky;
+	top: 157px;
+	height: max-content;
+}
+#volverAtras {
+	color: #fff;
+	border: solid 1px #0082eb;
+	border-radius: 0%;
+	background-color: #0082eb;
+}
+
+#volverAtras:hover {
+	background-color: #0264b3;
+	color: #fff;
+	border-radius: 0%;
+}
+#borrarCookies {
+	font-weight: 900;
+	background-color: #0082eb;
+	color: #fff;
+	font-size: 15px;
+	justify-content: center;
+	border-radius: 0%;
+	display: flex;
+}
+
+#borrarCookies:hover {
+	background-color: #0264b3 !important;
+}
+
+#empezarDeCero {
+	color: #0082eb;
+	border: solid 1px #0082eb;
+	border-radius: 0%;
+}
+
+#empezarDeCero:hover {
+	color: #fff;
+	background-color: #0082eb;
+}
+
+#formulario{
+	position: sticky;
+    top: 100px;
+}

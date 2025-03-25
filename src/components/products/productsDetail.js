@@ -1,0 +1,37 @@
+import React,{ useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { ProductDetailMap } from "./productsDetailMap";
+import { RequestProductsNotebooks } from "../helpers/requestDataNotebooks";
+import './ProductStyle.css'
+
+
+export function ProductsDetail (){
+    const [ loading, setLoading ] = useState(false)
+    const [ product, setProduct ] = useState([])
+    const { param } = useParams()
+
+/* Function to validate the product, matching the category property with the url  */
+        useEffect( ()=>{
+            setLoading(true)
+            RequestProductsNotebooks()
+                .then( (res) =>{
+                    if (!param) {
+                        setProduct(res)
+                    } else {
+                        // eslint-disable-next-line
+                        setProduct( res.filter( article => article.id == param))
+                    }
+        }) 
+        .catch ( (e) =>{
+            console.log(e)
+        }) 
+        .finally(()=>{
+            setLoading(false)
+        })
+}, [param])
+    return(
+        <>
+            {loading ? <p>Loading...</p> : <ProductDetailMap product={product}/>}
+        </>
+    )
+}

@@ -1,0 +1,13 @@
+.imagenBannerAmazonCuerpo{
+    width: 100%;
+}
+
+.imagenBannerAmazonCuerpo img{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .imagenBannerAmazonCuerpo img{
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.contenedorBanner{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contenedorBanner img {
+    width: 100%;
+    border-radius: 23px;
+    margin-top: 20px;
+}
+
+.contenedorBanner #catalogo{
+    width: 85.8%;
+}
+
+
+@media (max-width: 600px) {
+    .contenedorBanner{
+        width: 100%;
+    }
+    .ocultaImagen{
+        display: none;
+    }
+    .contenedorBanner img {
+        display: none;
+    }
+}
